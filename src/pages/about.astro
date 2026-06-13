@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
 
 const pageTitle = "私について";
 
@@ -50,9 +52,7 @@ const textCase = "uppercase";
 		</style>
 	</head>
 	<body>
-		<a href="/">ホーム</a>
-		<a href="/about/">概要</a>
-		<a href="/blog/">ブログ</a>
+		<Navigation />
 		<h1>{pageTitle}</h1>
 		<h2>... そして私の新しいAstroサイトについて！</h2>
 
@@ -105,5 +105,6 @@ const textCase = "uppercase";
 				<p>My goal is not 3 days. 3日が目標ではありません。</p>
 			)
 		}
+		<Footer />
 	</body>
 </html>
